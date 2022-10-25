@@ -1,0 +1,133 @@
+.container{
+    width: 600px;
+}
+svg{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    offset-path: path('M50.62,202.15l64.32-80.75c11.21-14.08,33.88-5.25,32.62,12.7l0,0c-1.5,21.4,28.68,27.52,35.62,7.22L220,33.74, c6.43-18.8,33.99-15.36,35.61,4.45l13.97,171.63c1.65,20.22,30.07,23.18,35.84,3.73l30.79-103.78c4.43-14.93,24.28-17.88,32.87-4.88, l41.24,62.47c5.62,8.51,17.09,10.8,25.55,5.1l52.83-35.64c10.37-7,24.54-1.78,27.9,10.27l44.78,160.46');
+    animation: fly 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes fly{/*keyframes for animation on a path*/
+    0%{
+        offset-distance: 0%;
+    }
+    100%{
+        offset-distance: 100%;
+    }
+}
+#CircleColor{
+    transform-origin: 50% 50%;/*transform origin point at center*/
+    transform-box: fill-box;/*trasnform origin will be calculated based on the fill box of the shape*/
+    
+    animation: beat, fade;/*call the animation keyframes*/
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-in-out;     
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;               
+}
+
+p{
+    font-family: Impact;
+    font-size: 100px;
+    font-weight: 100px;
+    margin: 10px;
+}
+
+
+@keyframes beat{/*keyframes codes for beating from https://www.linkedin.com/learning/css-animation-14153685/animating-svg-with-css?autoSkip=true&autoplay=true&resume=false*/
+    0% {
+        transform: scale(0.1);
+     }
+     80% {
+        transform: scale(1.25);
+     }
+     100% {
+        transform: scale(1);
+     }
+}
+@keyframes fade{/*keyframes codes for fading from https://www.linkedin.com/learning/css-animation-14153685/animating-svg-with-css?autoSkip=true&autoplay=true&resume=false*/
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* CSS Styel for the Text Animation*/
+:root{/*CSS VARIABLES*/
+    --dist: 0%;
+    --scale: 2;
+    --deg: 10deg;
+    --dur: 2s;
+    --delay: 0s;
+    --ease: ease-in-out;
+}
+p{   
+    font-family: Impact;
+    font-size: 50px;    
+    margin: 20px;
+    animation: moveIn 2s var(--dur) var(--ease) both;
+    text-align: center;
+}
+@keyframes moveIn{
+    0%{
+        transform: translateX(-125%) scale(1) rotate(0deg);
+    }
+    100%{
+        transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
+    }
+}
+/*pseudo-class that matches elements based on their position among sibling of the same type(tag name)*/
+p:nth-of-type(1){
+    --scale:1.75;
+    --dist: 5%;
+    --deg:5deg;
+    --dur:1.9s;
+    --ease: cubic-bezier(0.22,1,0.36,1);
+    margin-bottom: 20px;
+}
+p:nth-of-type(2){
+    --scale:1.5;
+    --dist: 12%;
+    --delay: 0.5s;
+    --ease: cubic-bezier(0.34,1.56, 0.64, 1);
+    color: rgb(30, 165, 93);
+    margin-bottom: 20px;
+}
+p:nth-of-type(3){
+    --deg:-5deg;
+    --dist:20%;
+    --ease:cubic-bezier(0.25,1,0.5,1);
+    color: rgb(6, 15, 86);
+    margin-bottom: 20px;
+}
+p:nth-of-type(4){
+    --scale:1.9;
+    --deg:15deg;
+    --ease:cubic-bezier(0.25,1,0.5,1);
+    color: rgb(151, 6, 28);
+}
+/*nav bar*/
+nav{
+    background-color: aqua;
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0px ;
+    padding: 10px 10px 10px 0px;
+    
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  a:hover{
+    font-size: larger;
+  }

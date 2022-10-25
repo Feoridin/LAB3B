@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 113.36 113.77" style="enable-background:new 0 0 113.36 113.77;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#E8194A;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="CircleColor">
+	<radialGradient id="SVGID_1_" cx="58.3576" cy="55.8204" r="26.3874" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="0.1536" style="stop-color:#0E0D0E"/>
+		<stop  offset="0.2829" style="stop-color:#2A2727"/>
+		<stop  offset="0.4034" style="stop-color:#463C3A"/>
+		<stop  offset="0.5187" style="stop-color:#5C4A43"/>
+		<stop  offset="0.6302" style="stop-color:#745348"/>
+		<stop  offset="0.7389" style="stop-color:#8F5745"/>
+		<stop  offset="0.8453" style="stop-color:#B0543D"/>
+		<stop  offset="0.9473" style="stop-color:#D63E2C"/>
+		<stop  offset="1" style="stop-color:#ED1C24"/>
+	</radialGradient>
+	<ellipse class="st0" cx="58.36" cy="55.82" rx="25.83" ry="26.93"/>
+</g>
+<g id="CircleRed">
+	<ellipse class="st1" cx="58.36" cy="55.69" rx="25.83" ry="26.93"/>
+</g>
+</svg>

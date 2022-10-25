@@ -1,0 +1,323 @@
+/*color palette
+135, 168, 120 - asparagus
+176, 188, 152 - laurel Green
+199, 204, 185 - Ash Gray
+202, 226, 188 - Tea Green
+219, 249, 184 - Tea Green Lighter
+*/
+/*Global Styles
+--------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+figure{
+  display:flex;
+  justify-content: flex-start;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+    color: #343434;
+    margin: 0; /*remove the spaces between the sections*/
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0px 0 60px 0---------; /*spaced the content from other sections*/
+    }
+h3{
+    margin-bottom: 0; /*this will minimize the spacing between h3 and the paragraph*/
+}
+.item-details h3 + p { /*this will make the first paragraph after h3 into italic on the Education Background only*/
+    font-style: italic;
+}
+.item-details h3 ~ p { /*this will minimize the spacing on the paragraph after h3 on the Education Background only*/
+    margin: 0;
+}
+.divider > section{
+    border-bottom: 1px dashed #343434; /*dash bottom border on project and work experience sections*/
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+/*nav bar*/
+nav{
+  background-color: aqua;
+  width: 100%;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0px ;
+  padding: 10px 10px 10px 0px;
+  
+}
+li{
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+}
+a:hover{
+  font-size:larger;
+}
+/* Profile
+--------------------------------*/
+header {
+background-image: url(../project/green.jpg);
+}
+/* Projects
+--------------------------------*/
+.projects{
+    background: rgb(176, 188, 152) ;
+}
+.projects a {
+    color: whitesmoke;
+    background: rgb(1, 1, 61);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px; /*rounded edges*/
+    box-shadow: 3px 3px rgb(41, 40, 40);
+  
+}
+.projects a:hover {
+    background: rgb(1, 1, 61, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3{
+    margin-top: 0;
+}
+
+/* Work Experience
+--------------------------------*/
+.work-experience{
+    background: rgb(199, 204, 185);
+}
+
+
+
+
+
+/* Education
+--------------------------------*/
+.education{
+    background-image: url(../project/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p {
+width: 60%;
+}
+
+/* Conctact Info
+--------------------------------*/
+footer {
+    background: rgb(135, 168, 120);
+    
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+/* Responsive
+--------------------------------*/
+@media screen and (min-width:750px){/*This will remain the alignment to center of the header and footer until it reaches 750px*/
+    header, footer {
+        text-align: center;
+    }
+    .project-item img{/*This will remain the image properties until it reaches 750px*/
+        float: left;
+        margin-right: 20px;
+    }
+
+.job-item {/*This will remain the grid display of work experience until it reaches 750px*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.contact-list{/*This will remain the contact list in line until it reaches 750px*/
+    display: flex;
+    justify-content: center;
+}
+}
+@media screen and (max-width:749px){/*This will change the height of the text of h1 when resolution will reach 749px)*/
+    h1{
+     font-size: 80px;
+     line-height: 0.9;
+     margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a{
+        padding: 5px;
+
+    }
+
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);/*SCRIPT FROM https://www.sliderrevolution.com/resources/css-modal/)*/
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+
+
+
+/*==================================== 
+  Some styles to spruce up the demo
+=====================================*/ 
+
+body {
+  background: $white;
+  color: $black-light; 
+  font-family: $lato;
+  font-weight: $thin;
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
+}
+
+
+.wrap {
+  padding: 1em;
+  text-align: center;
+  @media (min-width: 700px) { padding: 1em 2em; }
+}
+
+
+/*==================================== 
+  Our Modal Window styles
+=====================================*/
+.modal {
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 1em;
+}
+@media (min-width: 43.75em) {
+  .modal {
+    padding: 1.5em;
+  }
+}
+.modal > label {
+  background: #FFD300;
+  border: 1px solid #f0c600;
+  border-radius: .2em;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  text-shadow: 1px 1px 1px #fff;
+  transition: all 0.55s;
+}
+.modal > label:hover {
+  transform: scale(0.97);
+}
+.modal__overlay {
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  top: 0;
+  z-index: 600;
+}
+.modal__wrap {
+  padding: 1em 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 90%;
+}
+@media (min-width: 50em) {
+  .modal__wrap {
+    padding: 1.75em;
+  }
+}
+@media (min-height: 37.5em) {
+  .modal__wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+.modal__wrap label {
+  background: #FFD300;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em;
+}
+.modal__wrap h2 {
+  color: #FFD300;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.modal__wrap p {
+  color: #FFD300;
+  text-align: justify;
+}
+.modal input:focus ~ label {
+  transform: scale(0.97);
+}
+
+input {
+  position: absolute;
+  top: -1000px;
+}
+
+.modal__overlay {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+}
+
+input:checked ~ .modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+}

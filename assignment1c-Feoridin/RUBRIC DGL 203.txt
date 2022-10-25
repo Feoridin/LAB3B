@@ -1,0 +1,69 @@
+INSTRUCTIONS: Fill out the following form and upload the form to your GITHub repository. Choose only one of the corresponding numbers in your answer.
+
+
+Code Quality 
+
+0 - Nothing - No submission
+1 - Below Expectations - Code renders but the code is unreadable 
+2 - Meets Expectations - Good formatting and uses naming conventions but can be improved
+3 - Exceeds Expectations - Code is exceptionally clean and best practices are used
+
+Your Answer: 
+
+Content 
+
+0 - Nothing - No submission
+1 - Below Expectations - Content not related to assignment or project
+2 - Meets Expectations - Content is related to assignment or project and gets the point across
+3 - Exceeds Expectations - Content is exceptionally detailed and well put together
+
+Your Answer:
+
+Layout / Organization 
+
+0 - Nothing - No Submission
+1 - Below Expectations - Long codes with no divisions or random code layout
+2 - Meets Expectations - Code that is modular and divided into section declarations; subprograms
+3 - Exceeds Expectations - Code is exceptionally well organized. 
+
+Your Answer:
+
+Comments/Commits 
+
+0 - Nothing - No Submission
+1 - Below Expectations - Excessive, unnecessary, and irrelevant remarks
+2 - Meets Expectations - Comments identify authorship and code's intention
+3 - Exceeds Expectations - Comments and documentation are clear succinct; wizardry points are explained
+
+Your Answer:
+
+
+Rendering 
+
+0 - Nothing - Page does not load or render
+1 - Below Expectations - Page renders, but has errors and/or has apparent design issues
+2 - Meets Expectations - Page renders and produces no errors
+3 - Exceeds Expectations - Page renders and displays properly for multiple screen sizes and browsers 
+
+Your Answer:
+
+
+Self Evaluation Questions:
+
+How much time did you spend on this assignment/project?
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+How difficult did you feel this project was? Easy, moderate, difficult?
+
+________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________
+
+What challenges did you come across while working on this project?
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+What things would you like to learn more about after having worked on this assignment?
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
